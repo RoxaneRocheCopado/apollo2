@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DataJson --></label>
+        <name>copadovsm__DataJson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scope --></label>
+        <name>copadovsm__Scope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>copadovsm__Type__c</name>
+        <picklistValues>
+            <masterLabel>Metrics Visibility and Order</masterLabel>
+            <translation><!-- Metrics Visibility and Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Threshold</masterLabel>
+            <translation><!-- Threshold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>copadovsm__User__c</name>
+        <relationshipLabel><!-- Value Stream Map Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value Stream Map --></label>
+        <name>copadovsm__Value_Stream_Map__c</name>
+        <relationshipLabel><!-- Value_Stream_Map_Configuration --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,74 @@
+<template>
+    <template lwc:if={hasMessages}>
+        <div class="bubbles">
+            <template for:each={messages} for:item="message">
+                <c-ai-message
+                    key={message.timestamp}
+                    username={username}
+                    timestamp={message.timestamp}
+                    role={message.role}
+                    more={message.more}
+                    content={message.content}>
+                </c-ai-message>
+            </template>
+            <template if:true={isLoading}>
+                <div class="bubble slds-spinner_container slds-is-relative">
+                    <div role="status" class="slds-spinner slds-spinner_medium">
+                        <span class="slds-assistive-text">{labels.labelLoading}</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+            </template>
+            <template if:true={functionExamples.length}>
+                <lightning-combobox
+                    name="actions"
+                    placeholder="... ask the Companion to perform an action for you"
+                    options={functionExamples}
+                    onchange={handleAction}>
+                </lightning-combobox>
+            </template>
+        </div>
+    </template>
+    <template lwc:elseif={hasAvailableQuestions}>
+        <lightning-combobox
+            name="question"
+            label={labels.CHAT_SELECT_PROMPT_LABEL}
+            placeholder={labels.CHAT_SELECT_PROMPT_PLACEHOLDER}
+            value={selectedQuestion}
+            options={availableQuestions}
+            onchange={handleSelectQuestion}>
+        </lightning-combobox>
+        <!-- TODO: add scroll indicator -->
+    </template>
+
+    <lightning-textarea
+        name="message"
+        data-id="message"
+        label={CHAT_ASK_OPENAI_LABEL_DYNAMIC}
+        placeholder={labels.CHAT_ASK_OPENAI_PLACEHOLDER}
+        disabled={isLoading}
+        value={userMessage}
+        onchange={handleUserMesssage}>
+    </lightning-textarea>
+
+    <div class="actions slds-p-vertical_x-small">
+        <span>
+            <a href="https://openai.com/policies/privacy-policy" target="_blank">{labels.CHAT_OPENAI_PRIVACY_POLICY_LINK}</a>
+        </span>
+        <lightning-button
+            data-id="send"
+            class="slds-m-right_x-small"
+            disabled={isLoading}
+            label={labels.CHAT_SEND_BUTTON_LABEL}
+            variant="brand"
+            onclick={handleSubmit}>
+        </lightning-button>
+        <lightning-button
+            disabled={isLoading}
+            label={labels.CHAT_CLEAR_CONVERSATION_BUTTON_LABEL}
+            variant="brand-outline"
+            onclick={handleClear}>
+        </lightning-button>
+    </div>
+</template>

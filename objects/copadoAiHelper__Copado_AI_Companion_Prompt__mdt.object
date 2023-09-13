@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>List of questions available for Copado AI Companion.
+
+You can disable/enable questions and create new ones.</description>
+    <fields>
+        <fullName>copadoAiHelper__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If Active, this Prompt will be visible in the AI Companion</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If Active, this Prompt will be visible in the AI Companion</inlineHelpText>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__Assistant_prompt_after__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object
+See this to understand the System messages role: https://platform.openai.com/docs/guides/gpt/chat-completions-api</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object
+See this to understand the System messages role: https://platform.openai.com/docs/guides/gpt/chat-completions-api</inlineHelpText>
+        <label>Assistant prompt (after)</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__Assistant_prompt_before__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object
+See this to understand the System messages role: https://platform.openai.com/docs/guides/gpt/chat-completions-api</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object
+See this to understand the System messages role: https://platform.openai.com/docs/guides/gpt/chat-completions-api</inlineHelpText>
+        <label>Assistant prompt (before)</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__Language__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Language of this Prompt, in the Salesforce&apos;s format &quot;en_US&quot;, &quot;en_UK&quot;. Empty Language will match for every user, regardless of its selected language. The end-user&apos;s language will be matched with the Prompt language.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Language of this Prompt, in the Salesforce&apos;s format &quot;en_US&quot;, &quot;en_UK&quot;. Empty Language will match for every user, regardless of its selected language. The end-user&apos;s language will be matched with the Prompt language.</inlineHelpText>
+        <label>Language</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Copado Object associated with this Prompt. Read the documentation to know which Objects are supported</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Copado Object associated with this Prompt. Read the documentation to know which Objects are supported</inlineHelpText>
+        <label>Object</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__Order__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Optional. Order in which the Questions will appear. If not set, or the number is duplicated, they will be shown by last modified date, newer first.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Optional. Order in which the Questions will appear. If not set, or the number is duplicated, they will be shown by last modified date, newer first.</inlineHelpText>
+        <label>Order</label>
+        <precision>10</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__Prompt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object</inlineHelpText>
+        <label>Prompt</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__System_prompt_before__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object
+See this to understand the System messages role: https://platform.openai.com/docs/guides/gpt/chat-completions-api</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object
+See this to understand the System messages role: https://platform.openai.com/docs/guides/gpt/chat-completions-api</inlineHelpText>
+        <label>System prompt (before)</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <label>Copado AI Companion Prompt</label>
+    <listViews>
+        <fullName>copadoAiHelper__All_Prompts_all_Fields</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>copadoAiHelper__Prompt__c</columns>
+        <columns>copadoAiHelper__Object__c</columns>
+        <columns>copadoAiHelper__Language__c</columns>
+        <columns>copadoAiHelper__Order__c</columns>
+        <columns>copadoAiHelper__Active__c</columns>
+        <columns>copadoAiHelper__System_prompt_before__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Prompts, all Fields</label>
+    </listViews>
+    <pluralLabel>Copado AI Companion Prompts</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

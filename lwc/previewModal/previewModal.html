@@ -1,0 +1,58 @@
+<template>
+    <lightning-modal-header
+        label={labels.previewModalLabel}>
+    </lightning-modal-header>
+    <lightning-modal-body>
+        <lightning-checkbox-group
+            class="slds-m-bottom_small"
+            name="Fields"
+            label={labels.selectFields}
+            disabled={isLoading}
+            value={selectedFields}
+            onchange={handlePreview}
+            options={options}>
+        </lightning-checkbox-group>
+
+        <lightning-textarea
+            name="Prompt"
+            disabled={isLoading}
+            value={previewText}
+            class="slds-m-bottom_small"
+            onchange={handlePreviewChange}
+            label={labels.promptLabel}>
+        </lightning-textarea>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text={labels.loading} size="medium"></lightning-spinner>
+        </template>
+
+        <template if:true={hasResult}>
+            <lightning-textarea
+                name="Recommendation"
+                value={result}
+                onchange={handleResultChange}
+                label={labels.recommendationLabel}>
+            </lightning-textarea>
+        </template>
+        <c-copado-ai-helper-dispatcher></c-copado-ai-helper-dispatcher>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <template if:true={hasResult}>
+            <lightning-button
+                class="slds-m-right_x-small"
+                label={labels.copy}
+                onclick={handleCopy}>
+            </lightning-button>
+        </template>
+        <lightning-button
+            class="slds-m-right_x-small"
+            label={labels.submitRequest}
+            variant="brand"
+            disabled={disabled}
+            onclick={handleSubmit}>
+        </lightning-button>
+        <lightning-button
+            label={labels.closeLabel}
+            onclick={handleClose}>
+        </lightning-button>
+    </lightning-modal-footer>
+</template>

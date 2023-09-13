@@ -1,0 +1,1 @@
+{"data":[{"id":4378,"name":"Robot 1","suites":[{"id":12777,"name":"Suite 1","showVideoParams":true,"suiteType":"default"}]},{"id":4400,"name":"Robot 2","suites":[{"id":12877,"name":"Suite 2","showVideoParams":true,"suiteType":"default"}]}]}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomHelpMenuSection xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customHelpMenuItems>
+        <linkUrl>https://docs.copado.com/articles/#!copado-ci-cd-publication/copado-plan/q/copado%2520plan/qid/18540/qp/1</linkUrl>
+        <masterLabel>Copado Plan Documentation</masterLabel>
+        <sortOrder>2</sortOrder>
+    </customHelpMenuItems>
+    <customHelpMenuItems>
+        <linkUrl>https://www.copado.com/</linkUrl>
+        <masterLabel>Copado Main Website</masterLabel>
+        <sortOrder>1</sortOrder>
+    </customHelpMenuItems>
+    <masterLabel>Copado Help</masterLabel>
+</CustomHelpMenuSection>

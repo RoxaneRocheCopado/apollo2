@@ -1,0 +1,29 @@
+<template>
+    <div class={bubbleClass}>
+        <pre class="contentToCopy">{content}</pre>
+
+        <div class="actions">
+            <template lwc:if={copy}>
+                <lightning-button
+                    icon-name="utility:copy_to_clipboard"
+                    icon-position="right"
+                    label="Copy to clipboard"
+                    variant="base"
+                    class="slds-m-right_xx-small tinybutton"
+                    onclick={handleCopy}>
+                </lightning-button>
+            </template>
+            <template lwc:if={more}>
+                <lightning-button
+                    class="show-more slds-m-right_x-small tinybutton"
+                    label="Show more"
+                    variant="base"
+                    onclick={handleContinue}>
+                </lightning-button>
+            </template>
+        </div>
+    </div>
+    <small class={role}>
+        {sender}
+    </small>
+</template>

@@ -1,0 +1,41 @@
+:host {
+    --sds-c-textarea-sizing-min-height: var(--textareHeight, 14rem);
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bubbles {
+    display: flex;
+    flex-direction: column;
+}
+
+.bubble {
+    background-color: #E5E5E5;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    padding: 0.25rem 0.5rem;
+    margin-right: 30%;
+}
+
+.user  {
+    box-sizing: border-box;
+    font-size: 80%;
+    font-style: italic;
+    opacity: 0.5;
+    text-align: right;
+}
+
+.actions span {
+    flex: 1;
+}
+
+a {
+    font-style: italic;
+    opacity: 0.6;
+}
