@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title={label.headerLabel}>
+        <lightning-layout vertical-align="stretch">
+            <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                <lightning-button label={label.useAI} variant="brand" onclick={handlePreview}></lightning-button>
+
+                <p class="slds-m-top_medium">
+                    {label.privacyPolicy}
+                </p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

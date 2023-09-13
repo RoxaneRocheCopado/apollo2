@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>copadoEx__Copado_Express_Enable_Pull_Request</name>
+    </customPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Copado Express Pull Request User</label>
+</PermissionSet>

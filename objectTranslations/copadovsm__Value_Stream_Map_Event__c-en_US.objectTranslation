@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Elapse Time --></label>
+        <name>copadovsm__Elapse_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>copadovsm__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Code --></label>
+        <name>copadovsm__Event_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>copadovsm__External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Time --></label>
+        <name>copadovsm__Lead_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator Id --></label>
+        <name>copadovsm__Operator_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Block --></label>
+        <name>copadovsm__Process_Block__c</name>
+        <relationshipLabel><!-- Value Stream Map Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Re-entry --></label>
+        <name>copadovsm__Re_entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>copadovsm__Stage__c</name>
+        <relationshipLabel><!-- Value Stream Map Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>copadovsm__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>copadovsm__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>copadovsm__Type__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting</masterLabel>
+            <translation><!-- Waiting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Item Id --></label>
+        <name>copadovsm__Work_Item_Id__c</name>
+    </fields>
+    <layouts>
+        <layout>Event Layout</layout>
+        <sections>
+            <label><!-- Calculations --></label>
+            <section>Calculations</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

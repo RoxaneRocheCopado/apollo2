@@ -1,0 +1,1 @@
+{"admin_role":null,"assignments":[{"description":"Project 1 Description","id":14623,"name":"Project 1","permissions":{"edit":true,"view":true},"role":"organization","type":"assignment"},{"description":"Project 2 Description","id":14682,"name":"Project 2","permissions":{"view":true},"role":"organization","type":"assignment"}]}

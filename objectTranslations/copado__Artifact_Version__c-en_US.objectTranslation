@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- SFDX Extension Fields --></label>
+        <name>cmcSf__SFDX_Extension_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SFDX Package Version Lightning Page --></label>
+        <name>cmcSf__SFDX_PackageVersion_CustomFields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Ancestor Id --></label>
+        <name>cmcSf__Ancestor_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ancestor Version --></label>
+        <name>cmcSf__Ancestor_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- The api version to be used for the packaging CLI commands. If this is not specified, the Api Version value from the parent Package will be used. If neither has been specified, the default value, i.e. the api version of the Dev Hub, will be used. Specify in the format, e.g. 54.0. --></help>
+        <label><!-- Api Version --></label>
+        <name>cmcSf__Api_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculate and store the code coverage percentage by running the Apex tests included in this package version. --></help>
+        <label><!-- Code Coverage --></label>
+        <name>cmcSf__Code_Coverage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if this is a password protected package version --></help>
+        <label><!-- Has Installation Key --></label>
+        <name>cmcSf__Has_Installation_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Apex class implementing InstallHandler which will be executed in the subscriber org after the managed package is installed or upgraded. --></help>
+        <label><!-- Post Install Script --></label>
+        <name>cmcSf__Post_Install_Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Install URL --></label>
+        <name>cmcSf__Post_Install_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release Notes URL --></label>
+        <name>cmcSf__Release_Notes_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if validation was skipped during package version generation. --></help>
+        <label><!-- Skip Validation --></label>
+        <name>cmcSf__Skip_Validation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Apex class implementing UninstallHandler which will be executed in the subscriber org before the managed package is uninstalled. --></help>
+        <label><!-- Uninstall Script --></label>
+        <name>cmcSf__Uninstall_Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package --></label>
+        <name>copado__Artifact__c</name>
+        <relationshipLabel><!-- Package Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The package version’s branch. Package version content is stored in this branch in the given repository. You may reach your repository information from the parent artifact record. --></help>
+        <label><!-- Branch --></label>
+        <name>copado__Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data JSON --></label>
+        <name>copado__Data_JSON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Definition File --></label>
+        <name>copado__DefinitionFile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Package versions are being created as beta and you can promote them to be released. When a version is released this checkbox will be checked. --></help>
+        <label><!-- Is released --></label>
+        <name>copado__Is_released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Job Execution Id --></label>
+        <name>copado__LastJobExecutionId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Package version id is in use in order to specify ancestry among package versions and for promoting a package version. --></help>
+        <label><!-- Package Version Id --></label>
+        <name>copado__Package_Version_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this URL in order to install this package in a production environment. --></help>
+        <label><!-- Production Installation URL --></label>
+        <name>copado__Production_Installation_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release Status --></label>
+        <name>copado__Release_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release --></label>
+        <name>copado__Release__c</name>
+        <relationshipLabel><!-- Package Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use this URL in order to install this package in a sandbox environment. --></help>
+        <label><!-- Sandbox Installation URL --></label>
+        <name>copado__Sandbox_Installation_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Draft indicates that a placeholder record has been created. Pre-Release indicates a package version that has been generated but not yet promoted or is not ready for release. A package version with Published status, indicates it can be released or deployed to production. Deprecated highlights a package version that has been deleted and is no longer available for use. Open, Locked and Cancelled are used for packages related to User Story bundles. --></help>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deprecated</masterLabel>
+            <translation><!-- Deprecated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Locked</masterLabel>
+            <translation><!-- Locked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Release</masterLabel>
+            <translation><!-- Pre-Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Published</masterLabel>
+            <translation><!-- Published --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- In order to install a package to a Salesforce environment, installation URL requires a subscriber Id. Please refer to installation URLs. --></help>
+        <label><!-- Subscriber Version Id --></label>
+        <name>copado__Subscriber_Version_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The package version’s tag. Package version content is stored in this tag in the given repository. Tags are created for each version number. Version with the same version number may overwrite each other. Try to keep your version numbers unique. --></help>
+        <label><!-- Tag --></label>
+        <name>copado__Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle User Story --></label>
+        <name>copado__User_Story__c</name>
+        <relationshipLabel><!-- Bundle Package --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The description of the package version --></help>
+        <label><!-- Version Description --></label>
+        <name>copado__Version_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- the name of the package version which entered by user while version creation. --></help>
+        <label><!-- Version Name --></label>
+        <name>copado__Version_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>copado__Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- The version number of the package version. Must be in major.minor.patch.build format. --></help>
+        <label><!-- Version number --></label>
+        <name>copado__Version_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- View In Git --></label>
+        <name>copado__View_In_Git__c</name>
+    </fields>
+    <layouts>
+        <layout>Artifact Version Layout</layout>
+        <sections>
+            <label><!-- Package Version Details --></label>
+            <section>Package Version Details</section>
+        </sections>
+        <sections>
+            <label><!-- Release Details --></label>
+            <section>Release Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Configure Package Version From Git --></label>
+        <name>cmcSf__Configure_Package_Version_From_Git</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Package Version --></label>
+        <name>cmcSf__GeneratePackageVersionSFDX</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Publish Package Version --></label>
+        <name>cmcSf__PublishPackageVersionSFDX</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Installation Key --></label>
+        <name>cmcSf__UpdateInstallationKey</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Package Version Info --></label>
+        <name>cmcSf__Update_Package_Version_Info</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Configuration --></label>
+        <name>copado__EditConfiguration</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Package Version --></label>
+        <name>copado__GeneratePackageVersion</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Lock Bundle --></label>
+        <name>copado__Lock_Bundle</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Publish Package Version --></label>
+        <name>copado__PublishPackageVersion</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- The API version specified is not valid. It must be in the format, Number.0 --></errorMessage>
+        <name>cmcSf__Api_Version_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Package version number specified is not valid. It must be in the format,  {whole number}.{whole number}.{whole number}.{whole number} or {whole number}.{whole number}.{whole number}.NEXT --></errorMessage>
+        <name>cmcSf__Package_Version_Number_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Tag field is used to create a Git tag during package version creation. Ensure there are no spaces or character sequences that are not allowed for the Git tag. For more details, review the Git documentation https://git-scm.com/docs/git-check-ref-format --></errorMessage>
+        <name>cmcSf__Tag_Restriction</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Merge_Version --></label>
+        <name>copado__Merge_Version</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Promote_Beta_to_Released --></label>
+        <name>copado__Promote_Beta_to_Released</name>
+    </webLinks>
+</CustomObjectTranslation>

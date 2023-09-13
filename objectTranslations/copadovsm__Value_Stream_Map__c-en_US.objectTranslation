@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Value Stream Start Date --></label>
+        <name>copadovsm__Activation_Datetime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Activating your Value Stream Map will kick off the Event Collection process. Activate your VSM to begin collecting data. --></help>
+        <label><!-- Active --></label>
+        <name>copadovsm__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backlog Criteria --></label>
+        <name>copadovsm__Backlog_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Criteria --></label>
+        <name>copadovsm__Cancelled_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Criteria --></label>
+        <name>copadovsm__Completed_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copadovsm__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>copadovsm__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excluded Criteria --></label>
+        <name>copadovsm__Excluded_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- FieldSet Name is the name of the fieldset that you created on your primary object. It allows you to display additional columns on your VSM report page. --></help>
+        <label><!-- FieldSet Name --></label>
+        <name>copadovsm__FieldSet_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Recalculation Execution Datetime --></label>
+        <name>copadovsm__Last_Execution_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Snapshot Execution Datetime --></label>
+        <name>copadovsm__Last_Snapshot_Execution_Datetime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary object that will be used for the Value Stream Map. Each VSM will have a primary object and primary field. --></help>
+        <label><!-- Object --></label>
+        <name>copadovsm__Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field identifies the primary owner field related to your Primary object. This feeds into the Operator icons within the VSM which shows work distribution and also the Interactive icons to show who owns the work item records. --></help>
+        <label><!-- Operator Field --></label>
+        <name>copadovsm__Operator_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Primary Field can be any field from the Primary Object associated with your VSM. The values from the Primary Field should define your business process for your Primary Object. The Primary Field will be utilized in the Configuration screen of the VSM. --></help>
+        <label><!-- Primary Field --></label>
+        <name>copadovsm__Primary_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Stream Map Status --></label>
+        <name>copadovsm__Recalculation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Calculating</masterLabel>
+            <translation><!-- Calculating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalculation Failed</masterLabel>
+            <translation><!-- Recalculation Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalculation Not Required</masterLabel>
+            <translation><!-- Recalculation Not Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalculation Required</masterLabel>
+            <translation><!-- Recalculation Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snapshot Failed</masterLabel>
+            <translation><!-- Snapshot Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snapshot In Progress</masterLabel>
+            <translation><!-- Snapshot In Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Record types are associated with the Primary Object selected. These are the record types that should be included in Value Stream Map configuration. --></help>
+        <label><!-- Record Types --></label>
+        <name>copadovsm__Record_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snapshot Mode --></label>
+        <name>copadovsm__Snapshot_Mode_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>copadovsm__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Threshold Enabled --></label>
+        <name>copadovsm__Threshold_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>copadovsm__Version__c</name>
+    </fields>
+    <layouts>
+        <layout>Value Stream Map Layout</layout>
+        <sections>
+            <label><!-- Setup --></label>
+            <section>Setup</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Activate --></label>
+        <name>copadovsm__Activate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add New Metric --></label>
+        <name>copadovsm__Add_New_Metric</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Configure Metrics --></label>
+        <name>copadovsm__Configure_Metrics</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Configure VSM Thresholds --></label>
+        <name>copadovsm__Configure_Thresholds</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Deactivate --></label>
+        <name>copadovsm__Deactivate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Enable Snapshot --></label>
+        <name>copadovsm__Enable_Snapshot</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Snapshot --></label>
+        <name>copadovsm__Generate_Snapshot</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Open Value Stream Map --></label>
+        <name>copadovsm__Open_Value_Stream_Map</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Recalculate --></label>
+        <name>copadovsm__Recalculate</name>
+    </quickActions>
+</CustomObjectTranslation>

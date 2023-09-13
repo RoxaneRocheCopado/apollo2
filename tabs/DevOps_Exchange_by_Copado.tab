@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access the DevOps Exchange to browse Community created &amp; supported extensions as well as additional Copado products &amp; Copado Labs extensions!</description>
+    <frameHeight>1200</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>DevOps Exchange by Copado</label>
+    <motif>Custom93: Shopping Cart</motif>
+    <url>https://success.copado.com/s/exchange-search</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

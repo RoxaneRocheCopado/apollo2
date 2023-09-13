@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- System Property --></value>
+    </caseValues>
+    <fields>
+        <label><!-- API Name --></label>
+        <name>copado__API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>copado__Environment__c</name>
+        <relationshipLabel><!-- System Properties --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if you want to share the System Property among multiple pipelines and environments. --></help>
+        <label><!-- Is Global? --></label>
+        <name>copado__Is_Global__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this field is selected, the value won&apos;t be accessible to any user, and it will be securely saved. The value will remain hidden unless the field is unchecked --></help>
+        <label><!-- Hide Value --></label>
+        <name>copado__Is_Sensitive__c</name>
+    </fields>
+    <fields>
+        <help>この値は、パイプライン、環境、ユーザーを選択すると、自動的に入力されます。何も選択されていない場合、このプロパティにリンクされているレコード ID を手動で入力する必要があります。</help>
+        <label><!-- Parent Id --></label>
+        <name>copado__ParentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline --></label>
+        <name>copado__Pipeline__c</name>
+        <relationshipLabel><!-- System Properties --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>システムプロパティの置き換えのために内部的に使用される読み取り専用フィールド</help>
+        <label><!-- UID --></label>
+        <name>copado__UID__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>copado__User__c</name>
+        <relationshipLabel><!-- System Properties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>copado__Value__c</name>
+    </fields>
+    <layouts>
+        <layout>System Property Layout</layout>
+        <sections>
+            <label><!-- System property assignment --></label>
+            <section>System property assignment</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Property Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The API Name cannot contain blank spaces. --></errorMessage>
+        <name>copado__API_Name_Cannot_Contain_Spaces</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The environment, pipeline, and user lookups must be empty if the &apos;Is Global&apos; checkbox is selected. --></errorMessage>
+        <name>copado__Lookups_empty_for_Global_Property</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A non-global property can only be related to one parent: Environment, Pipeline, or User. --></errorMessage>
+        <name>copado__Only_One_Parent_Is_Allowed</name>
+    </validationRules>
+</CustomObjectTranslation>

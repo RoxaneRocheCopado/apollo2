@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <description>Flow to update package version</description>
+    <environments>Default</environments>
+    <label>Update Package Version</label>
+    <processMetadataValues>
+        <name>AssociatedRecord</name>
+        <value/>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+</Flow>

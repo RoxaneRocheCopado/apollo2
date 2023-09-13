@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>copadovsm__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- A brief description of the Stage. --></help>
+        <label><!-- Description --></label>
+        <name>copadovsm__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order of Stages in the Value Stream Map. --></help>
+        <label><!-- Order --></label>
+        <name>copadovsm__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Stream Map --></label>
+        <name>copadovsm__Value_Stream_Map__c</name>
+        <relationshipLabel><!-- Stages --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Values that indicate work “to do” or “completed” should be considered “waiting”. These will be configured from the Primary Field that is selected on the VSM. --></help>
+        <label><!-- Waiting Criteria --></label>
+        <name>copadovsm__Waiting_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting Time Threshold Type --></label>
+        <name>copadovsm__Waiting_Time_Threshold_Type__c</name>
+        <picklistValues>
+            <masterLabel>Lower Threshold</masterLabel>
+            <translation><!-- Lower Threshold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upper Threshold</masterLabel>
+            <translation><!-- Upper Threshold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Waiting Time Threshold --></label>
+        <name>copadovsm__Waiting_Time_Threshold__c</name>
+    </fields>
+</CustomObjectTranslation>

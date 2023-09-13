@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Inicio</fullName>
+        <default>false</default>
+        <label>Inicio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trabajo</fullName>
+        <default>false</default>
+        <label>Trabajo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Temporal</fullName>
+        <default>false</default>
+        <label>Temporal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inactivo</fullName>
+        <default>false</default>
+        <label>Inactivo</label>
+    </standardValue>
+</StandardValueSet>
