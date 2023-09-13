@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>copadoAiHelper__Allowed_Objects__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of Object names (one per line) that are allowed to query, beside the Copado Objects.
+E.g.
+Case
+Lead
+Contact</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>List of Object names (one per line) that are allowed to query, beside the Copado Objects.</inlineHelpText>
+        <label>Allowed Objects</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__Allows_Functions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set to true if the OpenAI Model allows Function calls</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Set to true if the OpenAI Model allows Function calls</inlineHelpText>
+        <label>Allows Functions</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__Max_Tokens__c</fullName>
+        <defaultValue>200</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Max Tokens</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__OpenAI_Model__c</fullName>
+        <defaultValue>&quot;gpt-3.5-turbo&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them.</inlineHelpText>
+        <label>OpenAI Model</label>
+        <length>128</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copadoAiHelper__OpenAI_Temperature__c</fullName>
+        <defaultValue>0.7</defaultValue>
+        <deprecated>false</deprecated>
+        <description>What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.</inlineHelpText>
+        <label>OpenAI Temperature</label>
+        <precision>7</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Copado AI Companion Configuration</label>
+    <pluralLabel>Copado AI Companion Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

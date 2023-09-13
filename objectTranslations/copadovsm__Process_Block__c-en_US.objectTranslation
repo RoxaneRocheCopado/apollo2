@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The Active Criteria should be what is “in progress” or actual “working/active” values. These will be configured from the Primary Field that is selected on the VSM. --></help>
+        <label><!-- Active Criteria --></label>
+        <name>copadovsm__Active_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>copadovsm__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- CA Threshold Type --></label>
+        <name>copadovsm__CA_Threshold_Type__c</name>
+        <picklistValues>
+            <masterLabel>Lower Threshold</masterLabel>
+            <translation><!-- Lower Threshold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upper Threshold</masterLabel>
+            <translation><!-- Upper Threshold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CA Threshold --></label>
+        <name>copadovsm__CA_Threshold__c</name>
+    </fields>
+    <fields>
+        <help><!-- A brief description of the Process Block. --></help>
+        <label><!-- Description --></label>
+        <name>copadovsm__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Time Threshold Type --></label>
+        <name>copadovsm__Lead_Time_Threshold_Type__c</name>
+        <picklistValues>
+            <masterLabel>Lower Threshold</masterLabel>
+            <translation><!-- Lower Threshold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upper Threshold</masterLabel>
+            <translation><!-- Upper Threshold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Time Threshold --></label>
+        <name>copadovsm__Lead_Time_Threshold__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order of Process Block within a Stage. --></help>
+        <label><!-- Order --></label>
+        <name>copadovsm__Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- coma separated list of values. Empty means all. --></help>
+        <label><!-- Record Types --></label>
+        <name>copadovsm__Record_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>copadovsm__Stage__c</name>
+        <relationshipLabel><!-- Process Blocks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Process blocks inherits waiting criteria information from their parent Stage. --></help>
+        <label><!-- Waiting Criteria --></label>
+        <name>copadovsm__Waiting_Criteria__c</name>
+    </fields>
+    <layouts>
+        <layout>Process Block Layout</layout>
+        <sections>
+            <label><!-- Setup --></label>
+            <section>Setup</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

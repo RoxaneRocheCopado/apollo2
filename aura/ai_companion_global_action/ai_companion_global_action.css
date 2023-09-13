@@ -1,0 +1,6 @@
+.THIS.companion-scroll-container {
+    height: 23.75rem;
+    overflow: scroll;
+    margin: 0 -1rem;
+    padding: 0 1rem 0 0.5rem;
+}

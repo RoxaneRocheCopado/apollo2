@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetworkBranding xmlns="http://soap.sforce.com/2006/04/metadata">
+    <loginFooterText>Copado.com</loginFooterText>
+    <loginPrimaryColor>#00C3EF</loginPrimaryColor>
+    <loginQuaternaryColor>#192150</loginQuaternaryColor>
+    <network>copado-custom</network>
+    <primaryColor>#192150</primaryColor>
+    <primaryComplementColor>#FFFFFF</primaryComplementColor>
+    <quaternaryColor>#FFFFFF</quaternaryColor>
+    <quaternaryComplementColor>#222222</quaternaryComplementColor>
+    <secondaryColor>#51606E</secondaryColor>
+    <tertiaryColor>#DDE4E9</tertiaryColor>
+    <tertiaryComplementColor>#222222</tertiaryComplementColor>
+    <zeronaryColor>#00C3EF</zeronaryColor>
+    <zeronaryComplementColor>#222222</zeronaryComplementColor>
+</NetworkBranding>

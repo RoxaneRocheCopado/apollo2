@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- If Active, this Prompt will be visible in the AI Companion --></help>
+        <label><!-- Active --></label>
+        <name>copadoAiHelper__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object
+See this to understand the System messages role: https://platform.openai.com/docs/guides/gpt/chat-completions-api --></help>
+        <label><!-- Assistant prompt (after) --></label>
+        <name>copadoAiHelper__Assistant_prompt_after__c</name>
+    </fields>
+    <fields>
+        <help><!-- Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object
+See this to understand the System messages role: https://platform.openai.com/docs/guides/gpt/chat-completions-api --></help>
+        <label><!-- Assistant prompt (before) --></label>
+        <name>copadoAiHelper__Assistant_prompt_before__c</name>
+    </fields>
+    <fields>
+        <help><!-- Language of this Prompt, in the Salesforce&apos;s format &quot;en_US&quot;, &quot;en_UK&quot;. Empty Language will match for every user, regardless of its selected language. The end-user&apos;s language will be matched with the Prompt language. --></help>
+        <label><!-- Language --></label>
+        <name>copadoAiHelper__Language__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copado Object associated with this Prompt. Read the documentation to know which Objects are supported --></help>
+        <label><!-- Object --></label>
+        <name>copadoAiHelper__Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- Optional. Order in which the Questions will appear. If not set, or the number is duplicated, they will be shown by last modified date, newer first. --></help>
+        <label><!-- Order --></label>
+        <name>copadoAiHelper__Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object --></help>
+        <label><!-- Prompt --></label>
+        <name>copadoAiHelper__Prompt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Question/Prompt for ChatGPT. It can contain special keywords such as {title}, {project name} and others.
+Consult the documentation to know which keywords are available for which Object
+See this to understand the System messages role: https://platform.openai.com/docs/guides/gpt/chat-completions-api --></help>
+        <label><!-- System prompt (before) --></label>
+        <name>copadoAiHelper__System_prompt_before__c</name>
+    </fields>
+    <layouts>
+        <layout>Copado AI Companion Prompt Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Prompt context information --></label>
+            <section>Prompt context information</section>
+        </sections>
+        <sections>
+            <label><!-- Prompt/Question information --></label>
+            <section>Prompt/Question information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

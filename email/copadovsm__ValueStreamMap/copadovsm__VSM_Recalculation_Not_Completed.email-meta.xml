@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>VSM Recalculation Job Not completed</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>VSM Recalculation Not Completed</name>
+    <relatedEntityType>copadovsm__Value_Stream_Map__c</relatedEntityType>
+    <style>none</style>
+    <subject>VSM hourly sync job was not completed - {{{copadovsm__Value_Stream_Map__c.Name}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

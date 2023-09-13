@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- For now only internally used by Copado. It links some Copado processes together. --></help>
+        <label><!-- Apex Callback --></label>
+        <name>copado__ApexCallback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Sync Status --></label>
+        <name>copado__CreditSyncStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many copado credits this process used. --></help>
+        <label><!-- Copado Credits Used --></label>
+        <name>copado__Custom_Function_Used_Credits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function Used Minutes --></label>
+        <name>copado__Custom_Function_Used_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deployment Parent object that trigger the execution. (for legacy) --></help>
+        <label><!-- Deployment --></label>
+        <name>copado__Deployment__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Display how long in seconds this process took to execute. --></help>
+        <label><!-- Duration (in seconds) --></label>
+        <name>copado__Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date time when the job ended. --></help>
+        <label><!-- End Time --></label>
+        <name>copado__End_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only displays when there&apos;s an error. It shows the error code to identify the issue quickly. --></help>
+        <label><!-- Error Code --></label>
+        <name>copado__Error_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only displays when there&apos;s an error. It is used to inform the user about what failed during the execution of the associated process. --></help>
+        <label><!-- Error Message --></label>
+        <name>copado__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function Worker Size --></label>
+        <name>copado__Function_Worker_Size__c</name>
+        <picklistValues>
+            <masterLabel>L</masterLabel>
+            <translation><!-- L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XL</masterLabel>
+            <translation><!-- XL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Function Parent object that trigger the execution. --></help>
+        <label><!-- Function --></label>
+        <name>copado__Function__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- When this result is the outcome of a Job Step, that is executed as part of a Job Template, this fields points to the Job Step. (note that Job Step and Function can be populated at the same time) --></help>
+        <label><!-- Job Step --></label>
+        <name>copado__JobStep__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Record link shortcutting to Job Step&apos;s Job Execution --></help>
+        <label><!-- Job Execution --></label>
+        <name>copado__Job_Execution__c</name>
+    </fields>
+    <fields>
+        <help><!-- For devs to map this process with any other process that happens outside Copado. --></help>
+        <label><!-- External Job ID --></label>
+        <name>copado__Job_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- API name of the parent Job. Used for reporting purposes mainly. --></help>
+        <label><!-- Job API Name --></label>
+        <name>copado__Job_Type__c</name>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used if this execution result summary links to other result summary in any other system than Copado. --></help>
+        <label><!-- External Result Link --></label>
+        <name>copado__Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- 15-digit ID of the record that triggered the process that generated the result. (e.g. A Job Step) We use a text field because Salesforce only allows one type in lookup fields. --></help>
+        <label><!-- Context ID --></label>
+        <name>copado__ParentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>copado__Parent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This status is used to track the current job activity. --></help>
+        <label><!-- Progress Status --></label>
+        <name>copado__Progress_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Promotion Parent object that trigger the execution. --></help>
+        <label><!-- Promotion --></label>
+        <name>copado__Promotion__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Includes all the returned data by the process. This can be used by other processes. --></help>
+        <label><!-- Result Data --></label>
+        <name>copado__Result_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date time when the job started. --></help>
+        <label><!-- Start Time --></label>
+        <name>copado__Start_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Current status of the result. Confirms if the result is pending or completed. --></help>
+        <label><!-- Status --></label>
+        <name>copado__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Test Parent object that trigger the execution. --></help>
+        <label><!-- Test --></label>
+        <name>copado__Test__c</name>
+        <relationshipLabel><!-- Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Upper limit of allocated execution time. If the process takes longer than this, it will be automatically terminated. --></help>
+        <label><!-- Timeout (minutes) --></label>
+        <name>copado__Timeout__c</name>
+    </fields>
+    <fields>
+        <help><!-- User Story Parent object that trigger the execution. (a commit for example) --></help>
+        <label><!-- User Story --></label>
+        <name>copado__User_Story__c</name>
+        <relationshipLabel><!-- Result --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Result Layout</layout>
+        <sections>
+            <label><!-- Execution Result --></label>
+            <section>Execution Result</section>
+        </sections>
+        <sections>
+            <label><!-- Execution Size --></label>
+            <section>Execution Size</section>
+        </sections>
+        <sections>
+            <label><!-- Execution Time --></label>
+            <section>Execution Time</section>
+        </sections>
+        <sections>
+            <label><!-- Functional Information --></label>
+            <section>Functional Information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>Updates Value Stream Start Data to the current date and time when it&apos;s activated if its empty.</description>
+    <label>Update Value Stream Map Activation Date Time</label>
+    <processMetadataValues>
+        <name>AssociatedRecord</name>
+        <value/>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+</Flow>

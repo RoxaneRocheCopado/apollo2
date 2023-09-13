@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Refreshes VSM View via Lightning Message Service</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Record Id of the VSM</description>
+        <fieldName>recordId</fieldName>
+    </lightningMessageFields>
+    <masterLabel>RefreshVSMView</masterLabel>
+</LightningMessageChannel>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#33FFFF</backgroundEndColor>
+    <backgroundFadeDirection>LeftToRight</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <description>Custom Homepage Dashboard for Copado customers</description>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>VisualforcePage</componentType>
+            <footer>end of Report</footer>
+            <groupingSortProperties/>
+            <header>Copado Custom Report</header>
+            <page>CopadoOEMOrgLogin</page>
+            <pageHeightInPixels>300</pageHeightInPixels>
+        </components>
+    </leftSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>VisualforcePage</componentType>
+            <footer>end of Report</footer>
+            <groupingSortProperties/>
+            <header>Working on stuff</header>
+            <page>UnderConstruction</page>
+            <pageHeightInPixels>300</pageHeightInPixels>
+        </components>
+    </rightSection>
+    <runningUser>rroche@copado.com.apollo</runningUser>
+    <textColor>#000000</textColor>
+    <title>Copado Welcome</title>
+    <titleColor>#000099</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

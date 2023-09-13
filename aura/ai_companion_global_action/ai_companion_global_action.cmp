@@ -1,0 +1,5 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" access="global">
+    <div class="companion-scroll-container">
+        <copadoAiHelper:copado_devops_ai_companion></copadoAiHelper:copado_devops_ai_companion>
+    </div>
+</aura:component>

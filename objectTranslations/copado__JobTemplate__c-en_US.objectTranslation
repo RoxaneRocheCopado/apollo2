@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- API Name --></label>
+        <name>copado__ApiName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copado__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>copado__Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>copado__Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- A JSON containing transaction and volume options --></help>
+        <label><!-- VolumeOptions --></label>
+        <name>copado__VolumeOptions__c</name>
+    </fields>
+    <quickActions>
+        <label><!-- Clone with Steps --></label>
+        <name>copado__Clone_with_Steps</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Step --></label>
+        <name>copado__New_Step</name>
+    </quickActions>
+</CustomObjectTranslation>

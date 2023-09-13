@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Calculation Method --></label>
+        <name>copadovsm__Calculation_Method__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sum</masterLabel>
+            <translation><!-- Sum --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Field Api --></label>
+        <name>copadovsm__Field_Api__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>copadovsm__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Stream Map --></label>
+        <name>copadovsm__Value_Stream_Map__c</name>
+        <relationshipLabel><!-- Value Stream Map Metrics --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>
